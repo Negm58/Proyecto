@@ -1,0 +1,80 @@
+// Constantes del sistema
+
+const ROLES = {
+  ADMIN: 'ADMIN',
+  MANAGER: 'GERENTE',
+  CASHIER: 'CAJERO',
+  VIEWER: 'VISUALIZADOR',
+};
+
+const MODULES = {
+  INVENTORY: 'inventory',
+  MENU: 'menu',
+  STATS: 'stats',
+  USERS: 'users',
+  BACKUPS: 'backups',
+  AI: 'ai',
+  SALES: 'sales',
+};
+
+const ACTIONS = {
+  CREATE: 'create',
+  READ: 'read',
+  UPDATE: 'update',
+  DELETE: 'delete',
+};
+
+const MOVEMENT_TYPES = {
+  ENTRY: 'ENTRY',
+  SALE_DEDUCTION: 'SALE_DEDUCTION',
+  ADJUSTMENT: 'ADJUSTMENT',
+  WASTE: 'WASTE',
+  EXPIRATION: 'EXPIRATION',
+};
+
+const LOT_STATUS = {
+  ACTIVE: 'ACTIVE',
+  DEPLETED: 'DEPLETED',
+  EXPIRED: 'EXPIRED',
+};
+
+const ALERT_TYPES = {
+  LOW_STOCK: 'LOW_STOCK',
+  EXPIRING_SOON: 'EXPIRING_SOON',
+  EXPIRED: 'EXPIRED',
+};
+
+const MENU_ITEM_TYPES = {
+  PLATO: 'PLATO',
+  COMBO: 'COMBO',
+};
+
+const PAYMENT_METHODS = {
+  CASH: 'EFECTIVO',
+  CARD: 'TARJETA',
+  TRANSFER: 'TRANSFERENCIA',
+};
+
+const EXPENSE_CATEGORIES = {
+  RENT: 'ALQUILER',
+  UTILITIES: 'SERVICIOS',
+  SALARIES: 'SALARIOS',
+  MAINTENANCE: 'MANTENIMIENTO',
+  SUPPLIES: 'SUMINISTROS',
+  OTHER: 'OTRO',
+};
+
+const UNITS_OF_MEASURE = ['kg', 'g', 'L', 'ml', 'unidades', 'porciones', 'docena'];
+
+module.exports = {
+  ROLES,
+  MODULES,
+  ACTIONS,
+  MOVEMENT_TYPES,
+  LOT_STATUS,
+  ALERT_TYPES,
+  MENU_ITEM_TYPES,
+  PAYMENT_METHODS,
+  EXPENSE_CATEGORIES,
+  UNITS_OF_MEASURE,
+};

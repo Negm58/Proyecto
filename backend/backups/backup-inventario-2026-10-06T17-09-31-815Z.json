@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "system": "Sistema de Inventario - Pollos La Llovizna",
+    "version": "1.0.0",
+    "createdAt": "2026-10-06T17:09:31.861Z",
+    "type": "MANUAL",
+    "totalRecords": {
+      "products": 0,
+      "lots": 0,
+      "menuItems": 0,
+      "sales": 0
+    }
+  },
+  "data": {
+    "users": [
+      {
+        "id": "ac0ab99a-02e2-47e7-a731-2ea4e8bb1c22",
+        "name": "Administrador General",
+        "email": "admin@polloslallovizna.com",
+        "passwordHash": "$2a$12$cgvG5x.2PC3TSevLVxKF5.C7e1JlySnaqFV4vXT49vLNKeqJcRfFK",
+        "isActive": true,
+        "createdAt": "2026-10-05T19:15:59.809Z",
+        "updatedAt": "2026-10-06T17:06:40.728Z"
+      }
+    ],
+    "roles": [
+      {
+        "id": 1,
+        "name": "VISUALIZADOR",
+        "description": "Solo lectura en todos los módulos"
+      },
+      {
+        "id": 2,
+        "name": "GERENTE",
+        "description": "Gerente con acceso a inventario, menú, estadísticas y ventas"
+      },
+      {
+        "id": 3,
+        "name": "ADMIN",
+        "description": "Administrador con acceso total al sistema"
+      },
+      {
+        "id": 4,
+        "name": "CAJERO",
+        "description": "Cajero con acceso a ventas y consulta de menú"
+      }
+    ],
+    "permissions": [
+      {
+        "id": 1,
+        "module": "inventory",
+        "action": "create",
+        "description": "Puede create en inventory"
+      },
+      {
+        "id": 2,
+        "module": "inventory",
+        "action": "read",
+        "description": "Puede read en inventory"
+      },
+      {
+        "id": 3,
+        "module": "inventory",
+        "action": "update",
+        "description": "Puede update en inventory"
+      },
+      {
+        "id": 4,
+        "module": "inventory",
+        "action": "delete",
+        "description": "Puede delete en inventory"
+      },
+      {
+        "id": 5,
+        "module": "menu",
+        "action": "create",
+        "description": "Puede create en menu"
+      },
+      {
+        "id": 6,
+        "module": "menu",
+        "action": "read",
+        "description": "Puede read en menu"
+      },
+      {
+        "id": 7,
+        "module": "menu",
+        "action": "update",
+        "description": "Puede update en menu"
+      },
+      {
+        "id": 8,
+        "module": "menu",
+        "action": "delete",
+        "description": "Puede delete en menu"
+      },
+      {
+        "id": 9,
+        "module": "stats",
+        "action": "create",
+        "description": "Puede create en stats"
+      },
+      {
+        "id": 10,
+        "module": "stats",
+        "action": "read",
+        "description": "Puede read en stats"
+      },
+      {
+        "id": 11,
+        "module": "stats",
+        "action": "update",
+        "description": "Puede update en stats"
+      },
+      {
+        "id": 12,
+        "module": "stats",
+        "action": "delete",
+        "description": "Puede delete en stats"
+      },
+      {
+        "id": 13,
+        "module": "users",
+        "action": "create",
+        "description": "Puede create en users"
+      },
+      {
+        "id": 14,
+        "module": "users",
+        "action": "read",
+        "description": "Puede read en users"
+      },
+      {
+        "id": 15,
+        "module": "users",
+        "action": "update",
+        "description": "Puede update en users"
+      },
+      {
+        "id": 16,
+        "module": "users",
+        "action": "delete",
+        "description": "Puede delete en users"
+      },
+      {
+        "id": 17,
+        "module": "backups",
+        "action": "create",
+        "description": "Puede create en backups"
+      },
+      {
+        "id": 18,
+        "module": "backups",
+        "action": "read",
+        "description": "Puede read en backups"
+      },
+      {
+        "id": 19,
+        "module": "backups",
+        "action": "update",
+        "description": "Puede update en backups"
+      },
+      {
+        "id": 20,
+        "module": "backups",
+        "action": "delete",
+        "description": "Puede delete en backups"
+      },
+      {
+        "id": 21,
+        "module": "ai",
+        "action": "create",
+        "description": "Puede create en ai"
+      },
+      {
+        "id": 22,
+        "module": "ai",
+        "action": "read",
+        "description": "Puede read en ai"
+      },
+      {
+        "id": 23,
+        "module": "ai",
+        "action": "update",
+        "description": "Puede update en ai"
+      },
+      {
+        "id": 24,
+        "module": "ai",
+        "action": "delete",
+        "description": "Puede delete en ai"
+      },
+      {
+        "id": 25,
+        "module": "sales",
+        "action": "create",
+        "description": "Puede create en sales"
+      },
+      {
+        "id": 26,
+        "module": "sales",
+        "action": "read",
+        "description": "Puede read en sales"
+      },
+      {
+        "id": 27,
+        "module": "sales",
+        "action": "update",
+        "description": "Puede update en sales"
+      },
+      {
+        "id": 28,
+        "module": "sales",
+        "action": "delete",
+        "description": "Puede delete en sales"
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userId": "ac0ab99a-02e2-47e7-a731-2ea4e8bb1c22",
+        "roleId": 3
+      }
+    ],
+    "rolePermissions": [
+      {
+        "id": 1,
+        "roleId": 3,
+        "permissionId": 1
+      },
+      {
+        "id": 2,
+        "roleId": 3,
+        "permissionId": 2
+      },
+      {
+        "id": 3,
+        "roleId": 3,
+        "permissionId": 3
+      },
+      {
+        "id": 4,
+        "roleId": 3,
+        "permissionId": 4
+      },
+      {
+        "id": 5,
+        "roleId": 3,
+        "permissionId": 5
+      },
+      {
+        "id": 6,
+        "roleId": 3,
+        "permissionId": 6
+      },
+      {
+        "id": 7,
+        "roleId": 3,
+        "permissionId": 7
+      },
+      {
+        "id": 8,
+        "roleId": 3,
+        "permissionId": 8
+      },
+      {
+        "id": 9,
+        "roleId": 3,
+        "permissionId": 9
+      },
+      {
+        "id": 10,
+        "roleId": 3,
+        "permissionId": 10
+      },
+      {
+        "id": 11,
+        "roleId": 3,
+        "permissionId": 11
+      },
+      {
+        "id": 12,
+        "roleId": 3,
+        "permissionId": 12
+      },
+      {
+        "id": 13,
+        "roleId": 3,
+        "permissionId": 13
+      },
+      {
+        "id": 14,
+        "roleId": 3,
+        "permissionId": 14
+      },
+      {
+        "id": 15,
+        "roleId": 3,
+        "permissionId": 15
+      },
+      {
+        "id": 16,
+        "roleId": 3,
+        "permissionId": 16
+      },
+      {
+        "id": 17,
+        "roleId": 3,
+        "permissionId": 17
+      },
+      {
+        "id": 18,
+        "roleId": 3,
+        "permissionId": 18
+      },
+      {
+        "id": 19,
+        "roleId": 3,
+        "permissionId": 19
+      },
+      {
+        "id": 20,
+        "roleId": 3,
+        "permissionId": 20
+      },
+      {
+        "id": 21,
+        "roleId": 3,
+        "permissionId": 21
+      },
+      {
+        "id": 22,
+        "roleId": 3,
+        "permissionId": 22
+      },
+      {
+        "id": 23,
+        "roleId": 3,
+        "permissionId": 23
+      },
+      {
+        "id": 24,
+        "roleId": 3,
+        "permissionId": 24
+      },
+      {
+        "id": 25,
+        "roleId": 3,
+        "permissionId": 25
+      },
+      {
+        "id": 26,
+        "roleId": 3,
+        "permissionId": 26
+      },
+      {
+        "id": 27,
+        "roleId": 3,
+        "permissionId": 27
+      },
+      {
+        "id": 28,
+        "roleId": 3,
+        "permissionId": 28
+      },
+      {
+        "id": 29,
+        "roleId": 2,
+        "permissionId": 1
+      },
+      {
+        "id": 30,
+        "roleId": 2,
+        "permissionId": 2
+      },
+      {
+        "id": 31,
+        "roleId": 2,
+        "permissionId": 3
+      },
+      {
+        "id": 32,
+        "roleId": 2,
+        "permissionId": 4
+      },
+      {
+        "id": 33,
+        "roleId": 2,
+        "permissionId": 5
+      },
+      {
+        "id": 34,
+        "roleId": 2,
+        "permissionId": 6
+      },
+      {
+        "id": 35,
+        "roleId": 2,
+        "permissionId": 7
+      },
+      {
+        "id": 36,
+        "roleId": 2,
+        "permissionId": 8
+      },
+      {
+        "id": 37,
+        "roleId": 2,
+        "permissionId": 9
+      },
+      {
+        "id": 38,
+        "roleId": 2,
+        "permissionId": 10
+      },
+      {
+        "id": 39,
+        "roleId": 2,
+        "permissionId": 11
+      },
+      {
+        "id": 40,
+        "roleId": 2,
+        "permissionId": 12
+      },
+      {
+        "id": 41,
+        "roleId": 2,
+        "permissionId": 14
+      },
+      {
+        "id": 42,
+        "roleId": 2,
+        "permissionId": 18
+      },
+      {
+        "id": 43,
+        "roleId": 2,
+        "permissionId": 21
+      },
+      {
+        "id": 44,
+        "roleId": 2,
+        "permissionId": 22
+      },
+      {
+        "id": 45,
+        "roleId": 2,
+        "permissionId": 23
+      },
+      {
+        "id": 46,
+        "roleId": 2,
+        "permissionId": 24
+      },
+      {
+        "id": 47,
+        "roleId": 2,
+        "permissionId": 25
+      },
+      {
+        "id": 48,
+        "roleId": 2,
+        "permissionId": 26
+      },
+      {
+        "id": 49,
+        "roleId": 2,
+        "permissionId": 27
+      },
+      {
+        "id": 50,
+        "roleId": 2,
+        "permissionId": 28
+      },
+      {
+        "id": 51,
+        "roleId": 4,
+        "permissionId": 2
+      },
+      {
+        "id": 52,
+        "roleId": 4,
+        "permissionId": 6
+      },
+      {
+        "id": 53,
+        "roleId": 4,
+        "permissionId": 22
+      },
+      {
+        "id": 54,
+        "roleId": 4,
+        "permissionId": 25
+      },
+      {
+        "id": 55,
+        "roleId": 4,
+        "permissionId": 26
+      },
+      {
+        "id": 56,
+        "roleId": 4,
+        "permissionId": 27
+      },
+      {
+        "id": 57,
+        "roleId": 4,
+        "permissionId": 28
+      },
+      {
+        "id": 58,
+        "roleId": 1,
+        "permissionId": 2
+      },
+      {
+        "id": 59,
+        "roleId": 1,
+        "permissionId": 6
+      },
+      {
+        "id": 60,
+        "roleId": 1,
+        "permissionId": 10
+      },
+      {
+        "id": 61,
+        "roleId": 1,
+        "permissionId": 14
+      },
+      {
+        "id": 62,
+        "roleId": 1,
+        "permissionId": 18
+      },
+      {
+        "id": 63,
+        "roleId": 1,
+        "permissionId": 22
+      },
+      {
+        "id": 64,
+        "roleId": 1,
+        "permissionId": 26
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Proteínas",
+        "description": "Pollos enteros, pechugas y carnes"
+      },
+      {
+        "id": 2,
+        "name": "Vegetales y Verduras",
+        "description": "Lechugas, tomates, cebollas"
+      },
+      {
+        "id": 3,
+        "name": "Carbohidratos",
+        "description": "Papas, harinas, arroz"
+      },
+      {
+        "id": 4,
+        "name": "Aceites y Grasas",
+        "description": "Aceites para freidoras"
+      },
+      {
+        "id": 5,
+        "name": "Condimentos y Especias",
+        "description": "Mix de adobos, sal, pimienta"
+      },
+      {
+        "id": 6,
+        "name": "Bebidas",
+        "description": "Gaseosas y jugos"
+      },
+      {
+        "id": 7,
+        "name": "Empaques y Desechables",
+        "description": "Envases térmicos, bolsas"
+      },
+      {
+        "id": 8,
+        "name": "Otros Insumos",
+        "description": "Carbón vegetal, servilletas"
+      }
+    ],
+    "suppliers": [
+      {
+        "id": 1,
+        "name": "Distribuidora Avícola La Granjita",
+        "contactPhone": "+58 414-1234567",
+        "contactEmail": "pedidos@lagranjita.com",
+        "address": "Zona Industrial 1, Galpón 4",
+        "isActive": true,
+        "createdAt": "2026-10-05T19:15:59.900Z"
+      },
+      {
+        "id": 2,
+        "name": "Agropecuaria Papas Andinas",
+        "contactPhone": "+58 424-7654321",
+        "contactEmail": "ventas@papasandinas.com",
+        "address": "Mercado Mayorista, Local 12",
+        "isActive": true,
+        "createdAt": "2026-10-05T19:15:59.908Z"
+      },
+      {
+        "id": 3,
+        "name": "Víveres y Carbón El Roble",
+        "contactPhone": "+58 412-9988776",
+        "contactEmail": "elroble@suministros.com",
+        "address": "Av. Las Industrias #88",
+        "isActive": true,
+        "createdAt": "2026-10-05T19:15:59.916Z"
+      }
+    ],
+    "products": [],
+    "inventoryLots": [],
+    "menuItems": [],
+    "recipeItems": [],
+    "combos": [],
+    "comboItems": [],
+    "sales": [],
+    "saleItems": [],
+    "inventoryMovements": [],
+    "priceHistory": [],
+    "operationalExpenses": [],
+    "alerts": []
+  }
+}
