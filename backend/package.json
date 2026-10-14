@@ -20,10 +20,8 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "node-cron": "^3.0.3",
+    "prisma": "^5.19.1",
     "socket.io": "^4.7.5"
-  },
-  "devDependencies": {
-    "prisma": "^5.19.1"
   },
   "keywords": [
     "inventario",
